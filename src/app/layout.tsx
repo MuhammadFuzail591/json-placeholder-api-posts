@@ -26,7 +26,7 @@ export default function RootLayout ({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  mx-auto w-[98%] lg:w-[80%]`}
+        className={`${geistSans.variable} ${geistMono.variable} mx-auto flex items-center justify-center w-[98%] lg:w-[80%]`}
       >
         {children}
       </body>

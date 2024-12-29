@@ -8,9 +8,7 @@ type cardProps = {
 
 const Card = ({ id, title, body }: cardProps) => {
   return (
-    <div
-      className='p-4 max-w-sm mt-10 bg-white shadow-sm shadow-black rounded-lg font-sans '
-    >
+    <div className='p-4 h-full max-w-sm bg-white shadow-sm shadow-black rounded-lg font-sans'>
       {/* Header Section */}
       <div className='mt-4'>
         {/* Image Section */}
@@ -34,7 +32,7 @@ const Card = ({ id, title, body }: cardProps) => {
         >
           {title}
         </a>
-        <p className='leading-relaxed text-gray-600'>{body}</p>
+        <p className='leading-relaxed text-gray-600 line-clamp-3'>{body}</p>
       </div>
     </div>
   )
